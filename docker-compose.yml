@@ -1,19 +1,13 @@
 services:
   frontend:
-    build:
-      context: .
-      dockerfile: Dockerfile_frontend
-      target: frontend
+    image: yong1le/quirknotes_frontend
     ports:
     - "3000:3000"
     depends_on:
     - backend
 
   backend:
-    build:
-      context: .
-      dockerfile: Dockerfile_backend
-      target: backend
+    image: yong1le/quirknotes_backend 
     ports:
     - "4000:4000"
     environment:
