@@ -2,9 +2,7 @@ services:
   frontend:
     image: yong1le/quirknotes_frontend
     ports:
-    - "3000:3000"
-    depends_on:
-    - backend
+    - "3000:80"
 
   backend:
     image: yong1le/quirknotes_backend 
